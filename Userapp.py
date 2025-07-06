@@ -318,6 +318,7 @@ HTML_TEMPLATE = """
         async function updateData() {
             try {
                 const response = await fetch('/data');
+
                 const data = await response.json();
 
                 // Fill result cards (removed MQ-137)
@@ -327,14 +328,12 @@ HTML_TEMPLATE = """
                         disease: "Mq-138",
                         img: "https://bz49dmux6d.ufs.sh/f/1Q7cAF0oN6JTLqYK7j5kX0SfouG3gHjNi7P1CsqceVOvn68A",
                         sensor: "MQ-138",
-                        baselineIdx: 1
                     },
                     {
                         id: "mq135",
                         disease: "Mq-135",
                         img: "https://bz49dmux6d.ufs.sh/f/1Q7cAF0oN6JTml6DJ2HxG6E3TILBoXrtsVONDbQPY0Kinl1F",
                         sensor: "MQ-135",
-                        baselineIdx: 0
                     }
                 ];
                 let html = "";
@@ -397,3 +396,7 @@ def data():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
+
+
+    
