@@ -352,7 +352,7 @@ HTML_TEMPLATE = """
                                     ${danger ? "มีความเสี่ยง" : "ไม่มีความเสี่ยง"}
                                 </div>
                             </div>
-                            <p>ค่า : ${data.readings[card.sensor].toFixed(3)} (baseline: ${parseFloat(data.baseline[card.baselineIdx]).toFixed(3)})</p>
+                            <p>ค่า : ${data.readings[card.sensor].toFixed(3)}</p>
                         </div>
                     </div>
                     `;
